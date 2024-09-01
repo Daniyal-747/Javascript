@@ -265,17 +265,18 @@ for (let i=1; i<=5; i++){
 
 in above example we have 3 conditions in for loop:
 
-1) let i=1; => It is called innitializing statement. Thisis inniatializing variable i condition which is starting from 1.
+1) let i=1; => It is called initializing statement. This is iniatializing variable i condition which is starting from 1.
                In this case, loop will keep initializing untill value is 5 or less than 5.
 2) i <=5; => This statenment tells you the stopping condition i.e. When this loop is going to stop. 
 3) i++; => This is called updation/updating condtion i.e. how variable i is going to be updated.
 
 In above condition, statement i is starting from one and it will updated every time with 1 value due to i++ until vale 5.
+In for loop, we are writing our entire condition in parenthesis i.e. in brackets()
 
 IMPORTANT:
-Loop can only be acces inside the block. If we will try to call it like with console.log outside the block, error will appear./*
+Loop can only be access inside the block. If we will try to call it like with console.log outside the block, error will appear./*
 
-// 2) INFINITE LOOP (A loop that never ends). We never use it in programming though
+// 2) INFINITE LOOP (A loop that never ends). We never use it in programming though.
 
 // -- When stopping condition becomes always true, the loop becomes infinite.
 
@@ -287,7 +288,124 @@ for(let i=1; i>=0; i++){
 
 Infinite Loop is not used in programming as it crashes the memory of your system.*/
 
-// 3) WHILE LOOP
+// 2) WHILE LOOP
+
+/*-- In While Loop, we first give the initialization value before loop. Then we start our while loop.
+     After that, we give stopping condition in parenthesis in while loop and then we write our condition in curly braces,
+     then we give updating condition after our condition is completed.
+
+e.g. 
+
+let i = 1;
+
+while(i<=5){
+    console.log("i =", i);
+    i++;
+} 
+*/
+
+// 3) DO-WHILE LOOP
+
+/* -- In Do while loop, the stopping condition of while loop comes in the end. While loops at least print once.
+
+e.g.
+
+let i = 1;
+do{
+    console.log("i =", i);
+    i++;
+}while(i<=5)
+
+For Lop, While Loop and Do-While loop are our general loops.
+// __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x__________ x__________ x
+
+
+SPECIAL LOOPS:
+
+1) for-of Loop
+2) for-in Loop
+
+These loops helps us to use loop on some special data types.
+
+1) FOR-OF LOOP
+
+-- for-of loop is used to apply a loop condition on the value of STRINGS & ARRAYS
+e.g.
+
+let str = "ApnaCollege"; 
+
+for(let i of str){       
+    console.log("i = ", i);
+    
+}
+
+Here, we do not provide initializing or updation condition to i. It woll count the string characters automatically.
+i here is iterator that will give you all characters.
+
+You can give any variable instead of i like..... for(let val of str)... here, val is iterator. Generaly, we use val as iterator.
+
+2) FOR_IN LOOP
+
+-- For in Loop is used to apply a loop condition on objects and arrays.
+
+In for in loop, we use "key" as an itrator. for-in loop return keys vaiables.
+in case we want key values as well, then we will pass the object as well.
+
+e.g.
+
+let student = {
+    name: "Rahul Kumar",
+    age: 20,
+    cgpa: 7.5,
+    isPass: true
+};
+
+for(let key in student){
+    console.log("key =", key, "value =", student[key]);
+    
+}
+
+/* __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+
+// STRINGS
+-- Strings is a sequence of characters used to represent text. Strings can be written in both single and double quotes.
+
+e.g.
+let str = "ApnaCollege"
+let str2 = 'ApnaCollege'
+
+both above examples are correct.
+
+All strings that we create in javascript have inbuilt properties and inbuilt funtions (methods). We call functions as methods.
+
+*In-Built Properties:
+
+Most important in-built properties of an string is string LENGTH. Every internal variable of a string stores a value in it.
+In main se ek internal variable jo har string ke pass hota hai that is a LENGTH variable.
+
+e.g.
+let str = "ApnaCollege"
+
+console.log(str.length) and it will show the character legth of str.
+
+--INDEX/INDICES (Index is singular and Indices are plural)
+
+We can also calculate the individual index of an string. For example, we have written "ApnaCollege" in strings. In total, it
+has 11 characters. String characters starts from zero value to onwards. We can calculate the position of an individual character,
+position is called index in programing.
+
+e.g.
+If we want to check the index of "ApnaCollege" having 11 characters. We will calculate it with below exxample:
+str = "ApnaCollege"
+
+console.log(str[3]) --- Here, we want the index of character number 3
+
+
+
+
+
+
+
 
 
 
