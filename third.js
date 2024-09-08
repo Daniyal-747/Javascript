@@ -105,6 +105,84 @@
 
 // STRINGS
 
-let str = "ApnaCollege";
+// let str= "ApnaCollege"
 
-console.log(str[8]);
+// console.log(str[4]);
+
+
+// TEMPLATE LITERALS
+
+// let specialString = `This is a Template Literal`;
+
+// console.log(typeof(specialString));
+
+
+// let obj = {
+//     item: "pen",
+//     price: 10
+// };
+
+//  let output = `price of ${obj.item} is ${obj.price} rupees`;
+
+//  console.log(output);
+
+// let str = "ApnaCollege"
+
+// let newStr = str.toLowerCase();
+
+// console.log(newStr);
+
+// let str = "   Apna College  JS   "
+
+// console.log(str);
+
+// SLICE METHOD
+
+// let str = "0123456789"
+
+// console.log(str.slice(3,7));
+
+// CONCAT METHOD
+
+// let str1 = "Apna"
+// let str2 = "College"
+// let str3 = "Best"
+
+// let res = str1.concat(str2+str3)
+// console.log(res);
+
+
+// REPLACE METHOD
+
+// let str = "ApnaCollege"
+
+// console.log(str.replace("College", "Pan"));
+
+// Character At Method
+
+// let str = "College"
+
+// console.log(str.charAt(5));
+
+// let str = "College";
+
+// str = str.replace("C", "D");
+
+// console.log(str);
+
+// PRACTICE QUESTION
+
+let fullName = prompt("Enter Your fullname without spaces")
+
+let username = "@" + fullName + fullName.length
+
+console.log(username);
+
+
+
+
+
+
+
+
+ 

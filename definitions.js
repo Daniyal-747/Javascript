@@ -365,14 +365,19 @@ for(let key in student){
     
 }
 
+NOTE: PROMPMT:
+
+-- Prompt returns strings naturlly. prompt type is string by nature. 
+
 /* __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
 
 // STRINGS
 -- Strings is a sequence of characters used to represent text. Strings can be written in both single and double quotes.
+-- To create a string we start from "let"
 
 e.g.
-let str = "ApnaCollege"
-let str2 = 'ApnaCollege'
+let str = "ApnaCollege"  //Double Quotes
+let str2 = 'ApnaCollege' //Single Quote
 
 both above examples are correct.
 
@@ -398,20 +403,169 @@ e.g.
 If we want to check the index of "ApnaCollege" having 11 characters. We will calculate it with below exxample:
 str = "ApnaCollege"
 
-console.log(str[3]) --- Here, we want the index of character number 3
+console.log(str[3]) --- Here, we want the index of character number 3*/
+
+/* __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+
+/* TEMPLATE LITERALS IN JS
+
+-- A way to have embedded expressions in strings
+-- Template Literal is a special type of string. We use back ticks (``) instead of double quotes in template literals.
+-- In short template strings are also strings but we can have embedded expressions in them by using back ticks.
+
+-- `this is a template literal`
+
+// STRING INTERPOLATION
+
+-- To create strings by doing substitution of placeholders.
+
+-- 'string text ${expression} string text'
+
+e.g.
+
+let obj = {
+    item: "pen",
+    price: 10
+};
+
+ let output = `price of ${obj.item} is ${obj.price} rupees`;
+
+ console.log(output);
+
+ In above example, we have written the entire sentence in back ticks and have written values with ${}.
+
+ while using back ticks, we use objects keys with $ sign and curly braces i.e. ${obj.item} or ${obj.prce}
+
+//  ESCAPE CHARACTER (\n) 
+
+-- Escape character is a part of template literal. Esxape Charater is used to break lines & print character in next line.
+
+e.g.
+
+consol.log(Apna/nCollege)
+
+-- In above example, escape character \n will break line and will print college in next line
+
+// TAB SPACE (\t)
+
+Tab space is used to give TAB space in the middle and is denotd by \t
+
+/* __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+
+// STRING METHOD (Functions) IN JS
+-- They are built-in functions to manipulate a string.
+-- method and functions are same. Method means kuch bhi kaam karna.
+
+e.g.
+console.log("ApnaCollege")
+
+upar example main log jo hai wo kuch print karwane ka kaam kr raha hai.
+
+METHODS IN STRINGS:
+
+1) toUpperCase()
+2) toLowerCase()
+3) trim()
+
+1) toUpperCase():
+
+-- toUpperCase() is used to change the strings in upper case.
 
 
+NOTE: str.toUpperCase original string ki value ko change nahi karega. Wo new value print kara kar dega. That is why is method
+ko hum new varibale bana kar apply karee.
+
+QUESTION: Why original strings do not gets changed in JavaScript?
+Answer: JavaScript main strings are immtuable matlab jo cheez change nahi hoti. like even if you want to change string "abc" to
+bhi apko new string bana kar usko change karna parega.
+
+e.g.
+
+let str = "ApnaCollege"
+let newStr = str.toUpperCase
+
+console.log(newStr);
+-- The above example will print in upper case.
 
 
+2) toLowerCase():
 
+-- toLowerCase() is similar to upper case example.
 
+3) trim()
 
+-- trim() method removes the white spaces. Starting and end main jitni bhi whitespace hoti hain unhe remove karta hai trim().
 
+e.g.
 
+let str = "   Apna College  JS    "
+consol.log(str.trim())
 
+-- In above example, trim will remove the space from start and end only.
 
+// MORE METHODS IN STRINGS
 
+1) SLICE METHOD(Start, End) // returns part of string
+-- Slice method returns us a part of string. You have to give the starting and ending index in slice method. However, the ending
+index is non-exclusive. It means that the value will return one index before the ending one.
 
+e.g.
+
+let str = "0123456789"
+
+console.log(str.slice(3,7));
+
+-- The above example will print 3,4,5,6 and will exlude 7 as the ending index is non-exclusive.
+
+-- in case we want the starting index from middle and want to print all values after the starting index, then we will type:
+
+e.g.
+
+let str = "Hello"
+
+console.log(str.slice(2));
+
+-- In above example, the index will start from 'e' and will print all letters after e i.e. "ello" as there is no ending index.
+
+2) CONCATINATION/CONCAT // join str2 with str 1
+
+-- Concat joins 2 srings with each other..
+
+if we want to join string 1 and 2, we will write: 
+str1.concat(str2)
+OR
+str1 + str2
+
+e.g.
+
+let str1 = "Apna"
+let str2 = "College"
+
+let res = str1.concat(str2)
+OR
+let res = str1 + str2
+
+console.log(res); // It will return Apna College after combining both
+
+// REPLACE METHOD // str.replace("searchVal", "newVal")
+
+-- Replace method is used to search and then replace values in strings
+
+e.g.
+
+let str = "ApnaCollege"
+
+console.log(str.replace("C", "P"));  // It will return as ApnaPollege
+
+4) CHARACTER AT METHOD// str.charAt(idx)
+
+-- String ke anda agar humain koi particular index find krke print karwani hai to we use charAt method.
+
+e.g.
+
+let str = "College"
+
+console.log(str.charAt(5)); // It will print g*/
 
 
 
