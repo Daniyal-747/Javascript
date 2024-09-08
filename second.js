@@ -35,6 +35,7 @@
 
 // console.log("a >= b", a >= b);
 
+
 // LOGICAL OPERATORS
 
 // let a = 6;
@@ -101,8 +102,6 @@
 
 // console.log(result);
 
-
-
 // let num = prompt("Enter a number")
 
 // if(num%5===0) {
@@ -128,3 +127,8 @@
 // }
 
 // console.log("Your Grade is =", grade);
+
+
+
+
+

@@ -172,17 +172,12 @@
 
 // PRACTICE QUESTION
 
-let fullName = prompt("Enter Your fullname without spaces")
+// let fullName = prompt("Enter Your fullname without spaces")
 
-let username = "@" + fullName + fullName.length
+// let username = "@" + fullName + fullName.length
 
-console.log(username);
+// console.log(username);
 
-
-
-
+// for in loop
 
 
-
-
- 

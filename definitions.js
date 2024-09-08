@@ -249,7 +249,7 @@ if condition value is true, in this case value of b will print & in case of fals
 
 
 
-// LECTURE 2 (LOOPS $ STRINGS)
+// LECTURE 3 (LOOPS $ STRINGS)
 
 // --Loops are used to execute a piece of code again and again.
 
@@ -438,7 +438,7 @@ let obj = {
 
 //  ESCAPE CHARACTER (\n) 
 
--- Escape character is a part of template literal. Esxape Charater is used to break lines & print character in next line.
+-- Escape character is a part of template literal. Escape Charater is used to break lines & print character in next line.
 
 e.g.
 
@@ -547,7 +547,7 @@ let res = str1 + str2
 
 console.log(res); // It will return Apna College after combining both
 
-// REPLACE METHOD // str.replace("searchVal", "newVal")
+3) // REPLACE METHOD // str.replace("searchVal", "newVal")
 
 -- Replace method is used to search and then replace values in strings
 
