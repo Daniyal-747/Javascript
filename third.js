@@ -1,4 +1,4 @@
-// LECTURE 2 (LOOPS $ STRINGS)
+// LECTURE 3 (LOOPS $ STRINGS)
 
 // for(count=1; count<=5; count++){
 //     console.log("Hellow World!");
@@ -124,6 +124,7 @@
 
 //  let output = `price of ${obj.item} is ${obj.price} rupees`;
 
+
 //  console.log(output);
 
 // let str = "ApnaCollege"
@@ -177,7 +178,3 @@
 // let username = "@" + fullName + fullName.length
 
 // console.log(username);
-
-// for in loop
-
-

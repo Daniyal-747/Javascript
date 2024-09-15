@@ -568,20 +568,115 @@ let str = "College"
 console.log(str.charAt(5)); // It will print g*/
 
 
+/* __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+   __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+   __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/
+
+   /* ARRAYS
+
+   -- Arrays are collections of items. Generally, when we want to store same type of information, we use arrays.
+   -- Like if we want student names or marks, we will be using arays to store same kind of information.
+   -- Arrays information ko store karane ka ek Linear tareeka hai. Means if we want to add marks, previouly we were using
+      different names to keys to store information in an object, but in arrays you don't have to store information in
+      different keys, ek hi object main sab store hojaega.
+
+   -- Object main keys matter karti hain jabke arrays main position (index) matter krti hai.
+
+   -- By default, ARRAY is an object. If you write typeof an array, it will return as an object.
+
+   -- In a single array, we can add strings, nummbers and boolean etc. However, we do not make arrays like this.
+   
+   -- Generally, we use arrays when we want to store collection of multiple items, but want to give only one name to those items.
+
+   * OBJECT vs ARRAYS
+   
+   -- In OBJECT we have to give different names to each key, while in ARRAYS we store all values in a single name.
+
+   * PROPERTY vs METHOD
+
+   --Method is the one jo kuch kaam perform kar raha hai jabke PROPERTY bus kuch value return krke deti hai.
+   e.g. console.log(marks.length). Ye ek propert hai jo ke sirf length ko print karwa rhi hai
 
 
+__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+
+// * ARRAY INDICES (Indices is plural form of index)
+
+-- Array indices are used to access index.
+-- like arr[0], arr[2], arr[3]...
+-- If we want to change an index of an array, we can write arr[60] = 66
+
+e.g.
+
+marks = [92, 80, 79, 654, 36]. These arre 4 indices. If we want index number of 79, we will write.
+console.log(marks[2])
+marks[3] = 75. It will change the value form 79 to 75.
+
+-- However, if we change the index of an string, it will remain same because strings are immutable while arrays are mutable.
+
+__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+
+// * LOOPING OER AN ARRAY
+
+-- Print all elements of an array. It means print all array elements together. It can be done via loop as array is
+   iterable. Iterale means jin par hum loop laga sakte hain.
+
+   -- ITERABLES main (Strings, Objects, Arrays) teeno cheezain ajati hain. Means in sab par loop lag sakta hai.
+
+   -- We can use any loop in arrays. 
+   
+   * FOR LOOP IN ARRAYS
+
+   -- Jab arrays main hum for loop use karte hain to we use length property as well becuase for loop ke lie humain length pata
+      hona zaroori hai.
+
+e.g.
+
+let arr = [1,2,3,4,5]
+
+for(let idx = 0, idx<arr.length, idx++){
+
+}
+
+-- In array loop, value of index is never "<=lenght", but its "<length".
+
+e.g#2.
+
+let heroes = ["IronMan", "Hulk", "SpiderMan", "Batman", "AntMan", "Thor"];
+
+for(let i=0; i<heroes.length; ix++){
+    console.log(heroes[i]);
+}
+
+-- Above example is the standard way of write loops in arrays.
+
+-- When we are dealing with iterables like (Strings, Objects, Arrays) we start iterable condition with zero like for(let i=0).
+
+-- Generally we use FOR OFF Loop in arrays.
+
+e.g.
 
 
+let heroes = ["IronMan", "Hulk", "SpiderMan", "Batman", "AntMan", "Thor"];
 
+for(let hero of heroes ){
+    console.log(hero);
+}
 
+__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/
 
+// * ARRAY METHODS
 
+/* -- There are 3 methods in arrays
 
-
-
-
-
-
-
+1) Push() Method : add to end (Add something at the end in existing erray) 
+2) Pop() Methdo : delete from end & return (Delete something from the end in existing array)
+3) toString() Method : converts array to string (Do not change existing array, but return new string)
+4) Concat() : joins multiple arrays & returns result (Do not change existing array and return new array)
+5) unshift() : add to start )(Add something at the start in existing erray)
+6) Shift() : delete from start and return (Delete something from the start in existing array)
+7) Slice(start index, end index) : returns a piece of the array -- (Do not change in existing array and return a new array)
+8) Splice(startidx, delCount, newEl1...) : change original array (add, remove, replace)
+9) Splice(3) --- in this method, if we pass only one index in splice, it will delete all index from the passing number.*/
 
 
