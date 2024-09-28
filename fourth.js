@@ -22,8 +22,7 @@
 
 // console.log(marks[3]);
 
-
-// LOOPING OVER AN ARRAy
+// LOOPING OVER AN ARRAY
 
 // FOR LOOP
 
@@ -35,6 +34,8 @@
 // }
 
 // FOR-OFF LOOP IN ARRAYS
+
+// let heroes = ["IronMan", "Hulk", "SpiderMan", "Batman"];
 
 // for(let hero of heroes ){
 //     console.log(hero);
@@ -231,5 +232,12 @@ c. Add Amazon at the end. */
 // companies.push("Amazon")
 
 // console.log(companies);
+
+// Q) Create an array to store companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+
+// a. Remove the first company from the array.
+// b. Remover Uber and Add Ola in its place.
+// c. Add Amazon at the end. */
+
 
 

@@ -576,7 +576,7 @@ console.log(str.charAt(5)); // It will print g*/
 
    -- Arrays are collections of items. Generally, when we want to store same type of information, we use arrays.
    -- Like if we want student names or marks, we will be using arays to store same kind of information.
-   -- Arrays information ko store karane ka ek Linear tareeka hai. Means if we want to add marks, previouly we were using
+   -- Arrays information ko store karane ka ek Linear tareeka hai. Means if we want to add marks, previously we were using
       different names to keys to store information in an object, but in arrays you don't have to store information in
       different keys, ek hi object main sab store hojaega.
 
@@ -616,7 +616,7 @@ marks[3] = 75. It will change the value form 79 to 75.
 
 __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
 
-// * LOOPING OER AN ARRAY
+// * LOOPING OVER AN ARRAY
 
 -- Print all elements of an array. It means print all array elements together. It can be done via loop as array is
    iterable. Iterale means jin par hum loop laga sakte hain.
@@ -644,7 +644,7 @@ e.g#2.
 
 let heroes = ["IronMan", "Hulk", "SpiderMan", "Batman", "AntMan", "Thor"];
 
-for(let i=0; i<heroes.length; ix++){
+for(let i=0; i<heroes.length; i++){
     console.log(heroes[i]);
 }
 
