@@ -680,3 +680,88 @@ __________ x __________ x __________ x __________ x __________ x __________ x __
 9) Splice(3) --- in this method, if we pass only one index in splice, it will delete all index from the passing number.*/
 
 
+/* __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+   __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+   __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/
+
+// METHODS & FUNCTIONS
+
+// FUNTIONS IN JS:
+
+/* -- Block of code that performs a specific task, can be invoked (called) whenever needed.
+   -- In Functions, parameters are working as local variables. It means it will only work for that particular block jis main
+   apne ye parameters define kie hain. Curly brces khatam hone ke baad they will end. 
+   -- In short, local variables of functions are block scope jo ke sirf function ke block tak zinda rehte.
+
+FUNCTION DEFINITION
+
+function functionName(){
+   //do some work
+}
+
+OR
+
+function functionName(pram1, pram2 ...){
+   //do some work
+}
+
+-- Kaam kia karna hai wo hum batate hain function definition ke andar.
+-- FUNCTIONS save us from redundancy (repitition).
+
+FUNCTION CALL
+
+functionName(); // Kaam karwane ke lie hum function ko call karte hain
+
+-- IF YOU WANT TO PRINT A PARTICULAR MESSAGE, WE DEFINIE INPUT VARIABLES
+-- In below example (msg) is an input variable. Input Variable is called PRAMETER
+
+function myFunction(msg){ //Parameter
+   console.log(msg)
+}
+
+myFunction("Apna College")  //argument
+
+-- In above example, function definition main jis variable ko hum use kar rahe that's called PARAMETER.
+-- Function call ke andar jis value ko hum pass karte hain that is called argument.
+
+// FUNCTIONS to Calculate 2 Numbers
+
+function sum(x,y){
+    console.log(x + y);
+}
+
+sum(2 , 4)
+
+-- In above example, we are storing 2 parameters in function and then calling it.
+
+// RETURN in Function:
+
+function sum(x, y){
+    s = x + y;
+    return s;
+}
+
+let val = sum(3, 4)
+
+console.log(val);
+
+-- In above example, we are returning the value through function by using RETURN method.
+-- IMP NOTE: If we are wrinting anything after the return method, it will not be executed.
+
+Example:
+
+function sum(x, y){
+    s = x + y;
+    console.log("Before Return")
+    return s;
+    console.log("Afet Return")
+
+}
+
+let val = sum(3, 4)
+
+console.log(val);
+
+-- In above example, After return will not be executed. Hence we donot write anything after return statement.*/
+
+/*__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/.
