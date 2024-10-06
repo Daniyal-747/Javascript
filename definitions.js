@@ -746,6 +746,7 @@ let val = sum(3, 4)
 console.log(val);
 
 -- In above example, we are returning the value through function by using RETURN method.
+-- (x,y) is working as a local variable of Function. It means ye sirf us function ke block tak rehta hai.
 -- IMP NOTE: If we are wrinting anything after the return method, it will not be executed.
 
 Example:
@@ -762,6 +763,43 @@ let val = sum(3, 4)
 
 console.log(val);
 
--- In above example, After return will not be executed. Hence we donot write anything after return statement.*/
+-- In above example, After return will not be executed. Hence we donot write anything after return statement.
+
+-- Function Parameters i.e. (x,y) are local variables of Function having a block scope jo sirf block tak zinda rehte.
+*/
 
 /*__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/.
+
+// ARROW FUNCTION (=>)
+/* -- Arrow function is a compact (short) way of writing a function.
+   -- Arrow Function is a part of Modern Javascript.
+   -- Arrow funtion is generally used for small functions like additions and multiplications otherwise we use normal functions.
+
+   example:
+
+   const arrowMul = (a,b)=>{
+    return a * b;
+}
+
+console.log(arrowMul(3,4));
+
+-- Printing String using Arrow Method:
+
+--const printHello = () =>{
+//     console.log("Hello");
+     
+// }
+
+// printHello()
+
+OR
+
+const printHello = () =>{
+    return "Hello";
+     
+}
+
+console.log(printHello());
+
+
+
