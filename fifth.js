@@ -14,7 +14,6 @@
 //     console.log(msg)
 //  }
 
-
 //  myFunction("Apna College")  //argument
 
 // Functions To Calculate 2 Numbers
@@ -33,6 +32,7 @@
 //     s = x + y;
 //     return s;
 // }
+
 
 // let val = sum(3, 4)
 
@@ -60,6 +60,7 @@
 // const arrowMul = (a,b)=>{
 //     return a * b;
 // }
+
 
 // console.log(arrowMul(3,4));
 
@@ -100,9 +101,69 @@
 
 // console.log(countVow("apnacolege"));
 
+// FOR EACH LOOP:
+
+// let arr = [1,2,3,4,5];
+
+// arr.forEach(function printVal(val){
+//     console.log(val);
+// })
+
+// Example With Arrow Function
+
+// let arr = ["Karachi", "Lahore", "Peshwar", "Islamabad"];
+
+// arr.forEach((val) =>{
+//     console.log(val);
+    
+// })
+
+// // EXAMPLE WIH INDEX and Array
+
+// let arr = ["Karachi", "Lahore", "Peshwar", "Islamabad"];
+
+// arr.forEach((val, idx, arr) =>{
+//     console.log(val.toLocaleUpperCase(), idx, arr);
+    
+// })
+
+// PRACTICE QUESTION
+
+// Q-) For a given array of numbers, print the square of each value using forEach Loop.
+
+// let nums = [2,3,4,5,6];
+
+// nums.forEach((num)=>{
+//         console.log(num*num);
+// })
+
+// ANOTHER WAY TO PASS CALL BACKS
 
 
+// let nums = [1,2,3,4,5];
 
+// let calSquare = (num) => {
+//     console.log(num*num);
+// }
 
+// nums.forEach(calSquare)
 
+// MAP TO PRINT ALL VALUES:
+
+// let nums = [2,3,4,5,6];
+
+// nums.map((val)=>{
+//     console.log(val);
+    
+// })
+
+// MAP TO CREATE NEW ARAY:
+
+let nums = [1,2,3,4,5];
+
+let newArr = nums.map((val)=>{
+    return val
+})
+
+console.log(newArr);
 

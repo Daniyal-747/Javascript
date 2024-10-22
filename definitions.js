@@ -768,7 +768,7 @@ console.log(val);
 -- Function Parameters i.e. (x,y) are local variables of Function having a block scope jo sirf block tak zinda rehte.
 */
 
-/*__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/.
+/*__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/
 
 // ARROW FUNCTION (=>)
 /* -- Arrow function is a compact (short) way of writing a function.
@@ -801,5 +801,117 @@ const printHello = () =>{
 
 console.log(printHello());
 
+/*__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x*/
+
+// FOR EACH LOOP (METHOD)
+/*
+-- For Each Loop is generally used for arrays. For Each Loop is basicaly a method.
+-- Methods are generally functions, but methods ko hum kisi objects ya data structure ke saath jor dete hain.
+-- For Each Loop is used to create a loop.
+
+-- IF we want to create a loop for an array. we will first write array name then dot(.)forEach then in parenthesis, we pass
+   function called (callBackFunction)
+
+   Eg:
+   arr.forEach(callBackFunction)
+
+      -- Functions in Java Script can be passed as a parameter and also we can return the value of a function.
+
+   *CALL BACK FUNCTION
+   
+   -- A call back is a function passed as an argument to another function.
+   -- CallBackFunction: Here, it is a function to execute for each element in the array
+
+   Eg:
+
+   let arr = [1,2,3,4,5]
+
+   arr.forEach(function printVal(val){
+      console.log(val);
+   })
+
+   -- We don't have to execute call back funtion. We only have to pass its definition. For Each will execute it automatically
+      for each element.
+
+   -- Generally, we pass CALL BACK function in the form of arrow function (=>)
+   
+   Eg:   
+   
+   let arr = ["Karachi", "Lahore", "Peshwar", "Islamabad"];
+
+   arr.forEach((val) =>{
+    console.log(val);
+    
+   })
+
+   --For Each hum tab use karte hain jab humain array ke har ek element ke lie kuch kaam perform karana hota hai.
+
+   ** We have 3 paameters in CALL BACK FUNCTION 
+
+   -- TYPES OF CALL BACK FUNTIONS PARAMETER 
+
+   1) value/item
+   2) index = Our index position
+   3) array itself
+
+   // EXAMPLE WIH INDEX and Array
+
+   let arr = ["Karachi", "Lahore", "Peshwar", "Islamabad"];
+
+   arr.forEach((val, idx, arr) =>{
+      console.log(val.toLocaleUpperCase(), idx, arr);
+    
+   })
+
+   **IMPORTANT NOTE: FOR Each Loop can only be used for ARRAYS. It cannot be used for STRINGS.
+
+   ** INTERVIEW QUESION FOR WEB DEVELOPMENT:
+
+   -- What are Higher Order Functions/Methods?
+
+   -- This forEach Loop is called Higher Order Function or Higher Order Method
+   -- Higher Order Functions wo functions hote hain jo doosre function ko ya to as a parameter le leter hain ya ksi function ko
+      return karte hain.
+
+/*__________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x __________ x
+
+** SOME MORE IMPORTANT ARRAY METHODS
+
+1) MAP METHOD:
+
+-- Map creates a new array with the result of some operation. The value its callback returns are used to form new array.
+-- It is quite similar to for each oop. 
+-- Map humin ek naya array return karke deta hai
+
+-- arr.map(callbackFnx(value,index,array))
+
+When we use forEach Loop or Map, we don't generally used index or array. We are generally using value.
+
+Example of map to print all values:
+
+let nums = [2,3,4,5,6];
+
+nums.map((val)=>{
+    console.log(val);
+    
+})
+
+Example of map to create new array:
+
+let nums = [1,2,3,4,5];
+
+let newArr = nums.map((val)=>{
+    return val
+})
+
+console.log(newArr);
+
+-- DIFFERNCE BETWEEN forEACH LOOP AND MAP:
+
+-- forEach Loop is used when humain koi normally calculation karwani ho ya normally kuch print karwana ho.
+-- MAP is used jab humain values ko use karke kuch naya array create karna ho.
+
+
+2) FILTER METHOD:
 
 
