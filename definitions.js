@@ -914,4 +914,65 @@ console.log(newArr);
 
 2) FILTER METHOD:
 
+-- Creates a new array of elements that gives true for a condition/filter.
 
+-- Filter methods ka kaam hota hai Array ke ek ek individual index par ja kar kuch values ko filter out karna based on some
+   condition. It will be stored in new array.
+
+   Eg: // Filtering even numbers
+
+   let arr = [1,2,3,4,5,6,7];
+
+let evenArr = arr.filter((val)=>{
+    return val % 2 === 0
+})
+
+console.log(evenArr);
+
+
+-- In above example, return ke baad jo condition hai wo true hojae to wo element new element main store hojaega and jiski
+   condition false hogi wo new array main store nahi hoga.
+
+
+   3) REDUCE METHOD:
+
+   -- Performs some operations and reduces the array  to a single value. It returns that single value.
+   -- Jab input main humare paas boht values hon lekin output main sirf ek value chahie to hu, reduce method use karte.
+
+   Eg:
+
+  let arr = [1,2,3,4];
+
+   const output = arr.reduce((res , curr)=>{
+       return res + curr
+   })
+
+   console.log(output);
+
+   -- In above example, result means previous and current means current value. In above example, previous value is 1 and
+      current value is 2. When we write res + curr, it adds previous value (1) in current value (2) and gives the answer.
+      The answer stores in result. after 1 + 2, result will become 3 and current will move to digit 3 from 2 and will add
+      again. The answer will be 6 in result and then current value will become 4 and it will add again and the final output
+      will be 10. That's how reduce works.
+
+      --Since Result is called previous, we can also write above condition as:
+
+       let arr = [1,2,3,4];
+
+      const output = arr.reduce((prev , curr)=>{
+         return prev + curr
+      })
+
+      console.log(output);
+
+   // NOW, If we want to return the largest number, we will use below method
+
+   let arr = [3,7,4,6,8];
+
+   let output = arr.reduce((prev , curr)=>{
+       return prev > curr ? prev : curr; 
+      })
+
+   console.log(output);
+
+   

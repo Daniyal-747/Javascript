@@ -27,7 +27,6 @@
 
 // RETURN in Function
 
-
 // function sum(x, y){
 //     s = x + y;
 //     return s;
@@ -39,7 +38,6 @@
 // console.log(val);
 
 // ARROW FUNCTION (=>)
-    
 
 // const arrowSum = (a,b)=> {
 //     console.log(a + b);
@@ -101,7 +99,7 @@
 
 // console.log(countVow("apnacolege"));
 
-// FOR EACH LOOP:
+// FOR EACH LOOP: 
 
 // let arr = [1,2,3,4,5];
 
@@ -139,7 +137,6 @@
 
 // ANOTHER WAY TO PASS CALL BACKS
 
-
 // let nums = [1,2,3,4,5];
 
 // let calSquare = (num) => {
@@ -157,13 +154,86 @@
     
 // })
 
+
 // MAP TO CREATE NEW ARAY:
 
-let nums = [1,2,3,4,5];
+// let nums = [1,2,3,4,5];
 
-let newArr = nums.map((val)=>{
-    return val
-})
+// let newArr = nums.map((val)=>{
+//     return val
+// })
 
-console.log(newArr);
+// console.log(newArr);
+
+
+// 2) FILTER METHOD:
+
+// let arr = [1,2,3,4,5,6,7];
+
+// // Filtering even numbers
+
+// let evenArr = arr.filter((val)=>{
+//     return val % 2 === 0
+// })
+
+// console.log(evenArr);
+
+
+// 3) REDUCE METHOD:
+
+// let arr = [1,2,3,4];
+
+// const output = arr.reduce((res , curr)=>{
+//     return res + curr
+// })
+
+// console.log(output);
+
+// NOW, If we want to return the largest number, we will use below method
+
+// let arr = [3,7,4,6,8];
+
+// let output = arr.reduce((prev , curr)=>{
+//     return prev > curr ? prev : curr; 
+// })
+
+// console.log(output);
+
+// PRACTICE QUESTION
+//Q-) Filter Out the marks of student that scored 90+
+
+// let marks = [87, 93, 64, 99, 86,90,79,91];
+
+// const result = marks.filter((val)=>{
+//     return val > 90
+// })
+
+// console.log(result);
+
+// Q-2)
+
+// let n = prompt("Enter a number");
+// let arr = [];
+
+// for(let i=1; i<=n; i++){
+//     arr[i-1] = i;    //i value 1(0) , 2(1), 3
+// }
+
+// console.log(arr);
+
+// // Sum of all numbers
+
+// let sum = arr.reduce((res, curr)=>{
+//     return res + curr;
+// })
+
+// console.log(sum);
+
+// // Product/Factorial of all numbers
+
+// let factorial = arr.reduce((res , curr)=>{
+//     return res * curr
+// })
+
+// console.log(factorial);
 
